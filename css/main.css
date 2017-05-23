@@ -752,7 +752,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
 		}
 
 		.hovereffect {
-			width: 47%;
+			width: 100%;
 			margin: 0 0 30px 0;
 		}
 
@@ -817,9 +817,11 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
 		#map{height:250px;}
 
 		/********** CSS **********/
+	
+		ul{min-width:250px;}
 
 		li{
-			width:51%; 
+			width:100%; 
 			text-align:center;
 			margin:0;
 		}
