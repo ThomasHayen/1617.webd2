@@ -589,11 +589,10 @@ footer i:hover{
 .serviceText h3{
 	color: #2A2A2A;
 	display: inline-table;
-    vertical-align:middle;
-    line-height:1.5em;  
+    vertical-align:middle; 
 	font-size:18px;
 	font-weight:900;
-	margin-top:150px;
+	margin-top:75%;
 }
 
 
@@ -786,7 +785,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
 
 		.serviceText h3{  
 			font-size:18px;
-			margin-top:230px;
+			margin-top:75%;
 		}
 
 		.halfLeft, .halfRight{
@@ -1061,7 +1060,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
 
 		.serviceText h3{  
 			font-size:24px;
-			margin-top:250px;
+			margin-top:75%;
 		}
 
 		.halfLeft, .halfRight{
