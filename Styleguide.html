@@ -5,6 +5,7 @@
 	<title>Style guide</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="icon" href="img/favicon.png">
     <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,24 +20,30 @@
 	<nav>
 		<ul>
 			<img src="img/Logo.png" alt="Logo"/>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="">Diensten</a></li>
-			<li><a href="">Portfolio</a></li>
-			<li><a href="">Over ons</a></li>
-			<li><a href="">Contact</a></li>	
+			<li><a href="#kleuren">Kleuren</a></li>
+			<li><a href="#illustraties">Illustraties</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#iconen">Iconen</a></li>
+			<li><a href="#logo">Logo's</a></li>	
+			<li><a href="#googlemaps">Google maps</a></li>	
+			<li><a href="#hovers">Hovers</a></li>	
+			<li><a href="#buttons">Buttons</a></li>	
+			<li><a href="#formulier">Formulier</a></li>	
 		</ul>
 	</nav>
 	
 	<main id="container">
 	
-		<h4>Kleuren</h4>
+		<h4 id="kleuren">Kleuren</h4>
 		<span>#3AAA37</span>
 		<span>#008633</span>
 		<span>#2A2A2A</span>
 		<span>#EBEBEB</span>
-		<span>#FFD53C</span>
+		<span>#E0E0E0</span>
+		<span>#D1D1D1</span>
+		<span>#FFFFFF</span>
 		
-		<h4>Illustraties</h4>
+		<h4 id="illustraties">Illustraties</h4>
 		<img src="img/Photo1.jpg" alt="Photo1"/>
 		<img src="img/Photo2.jpg" alt="Photo2"/>
 		<img src="img/Photo3.jpg" alt="Photo3"/>
@@ -53,19 +60,25 @@
 		<img src="img/Bedrijf9.png" alt="Bedrijf9"/>
 		
 
+		<img src="img/Member1.jpg" alt="Member1"/>
 		<img src="img/Member2.jpg" alt="Member2"/>
 		<img src="img/Member3.jpg" alt="Member3"/>
 		<img src="img/Member4.jpg" alt="Member4"/>
 		<img src="img/Member5.jpg" alt="Member5"/>
 		<img src="img/Member6.jpg" alt="Member6"/>
 		
-		<h4>Fonts</h4>
+		<img src="img/Dienst1.png" alt="Dienst1"/>
+		<img src="img/Dienst2.png" alt="Dienst2"/>
+		<img src="img/Dienst3.png" alt="Dienst3"/>
+		<img src="img/Dienst4.png" alt="Dienst4"/>
+		
+		<h4 id="fonts">Fonts</h4>
 		<h1>Open Sans Bold 2em (h1)</h1>
 		<h2>Open Sans Bold 1.6em (h2)</h2>
 		<h3>Open Sans Semibold 1.2em (h3)</h3>
 		<p>Open Sans Regular 1em (p)</p>
 		
-		<h4>Iconen</h4>
+		<h4 id="iconen">Iconen</h4>
 		<i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
 		<i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i>
 		<i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
@@ -76,14 +89,14 @@
 		<i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
 		<i class="fa fa-user fa-5x" aria-hidden="true"></i>
 		
-		<h4>Logo's</h4>
+		<h4 id="logo">Logo's</h4>
 		<img src="img/logo1.png" alt="logo1"/>
 		<img src="img/logo2.png" alt="logo2"/>
 		<img src="img/logo3.png" alt="logo3"/>
 		<img src="img/logo4.png" alt="logo4"/>
 		<img src="img/logo5.png" alt="logo5"/>
 		
-		<h4>Portfolio</h4>
+		<!--<h4>Portfolio</h4>
 		<div id="warp">
 			<ul id="gallery-container">
 			  <li class="gallery-item">
@@ -155,12 +168,13 @@
 					</label>
 				</li>
 			</ul>
-		</div>
+		</div>-->
 
-		<h4>Google maps</h4>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<h4 id="googlemaps">Google maps</h4>
+		<div id="map"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN0fJWkaKX6bHcWDNhXUKzlUT9obidJOE&callback=myMap"></script>
 
-		<h4>Hovers</h4>
+		<h4 id="hovers">Hovers</h4>
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 			<div class="hovereffect">
 				<img class="img-responsive" src="img/portfolio3.jpg" alt=""/>
@@ -170,18 +184,55 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="hovereffect2">
+				<img class="img-responsive" src="img/portfolio3.jpg" alt=""/>
+				<div class="overlay">
+				   <h5>Portfolio 3</h5>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gallery">
+			<div class="gallery-image">
+				<img src="img/Member1.jpg"/>
+				<div class="gallery-text">
+					<h3>Thomas Hayen</h3>
+				</div>
+			</div>
+		</div>
 
+		<a href="">
+		<div class="service">
+			<div class="serviceImage">
+				<img src="img/Dienst1.png"/>
+				<div class="serviceText">
+					<h3>Webdesign</h3>
+				</div>
+			</div>
+		</div>
+		</a>
 
-		<h4>Buttons</h4>
+		<h4 id="buttons">Buttons</h4>
 		<a href=""><button class="button"><span>Button</span></button></a>
 		<a href=""><button class="modernButton">Button</button></a>
 		<a href=""><button class="btn">Button</button></a>
 		
-		<h4>Form (?)</h4>
-		
-		<h4>Accordion (?)</h4>
-
-		
+		<h4 id="formulier">Formulier</h4>
+		<form>
+			<article class="halfLeft">
+				<input type="text" id="input-name" placeholder="Naam Voornaam" required>
+				<input type="email" id="input-email" placeholder="E-mailadres" required>
+				<input type="text" id="input-subject" placeholder="Onderwerp" required>
+			</article>
+			
+			<article class="halfRight">
+				<textarea name="message" type="text" id="input-message" placeholder="Bericht" required></textarea> 
+			</article>
+			
+			<button type="submit" value="submit">Verzenden</button>
+		</form>
 	</main>
 	
 <footer>
