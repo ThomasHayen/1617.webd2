@@ -211,6 +211,8 @@ article > h3:nth-child(n+1):nth-child(-n+3){margin-top:0;} article > h3:nth-chil
 
 span{color:#008633;font-weight:bold;}
 
+p a{color:#008633;}
+
 /********** Iconen **********/
 
 section main i.fa{
